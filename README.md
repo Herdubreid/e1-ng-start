@@ -7,9 +7,11 @@ An Angular E1 start project generated with [Angular CLI](https://github.com/angu
 Create your new `my-e1-web-app` project by cloning `e1-ng-start` and then change the remote repository.
 
 ``` bash
-$ git clone https://github.com/Herdubreid/e1-ng-start.git
+$ git clone https://github.com/Herdubreid/e1-ng-start.git my-e1-web-app
+$ cd my-e1-web-app
 $ git remote remove origin
 $ git remote add origin https://github.com/{GH_USERNAME}/my-e1-web-app
+$ npm install
 ```
 
 ## Development server
