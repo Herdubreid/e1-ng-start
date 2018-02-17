@@ -2,6 +2,16 @@
 
 An Angular E1 start project generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.4.
 
+## Get Started
+
+Create your new `my-e1-web-app` project by cloning `e1-ng-start` and then change the remote repository.
+
+``` bash
+$ git clone https://github.com/Herdubreid/e1-ng-start.git
+$ git remote remove origin
+$ git remote add origin https://github.com/{GH_USERNAME}/my-e1-web-app
+```
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
