@@ -1,4 +1,4 @@
-# E1NgStart
+# cE1NgStart
 
 An Angular E1 start project generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.4.
 
