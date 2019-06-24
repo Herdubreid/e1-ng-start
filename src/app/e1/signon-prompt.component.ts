@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialogRef } from '@angular/material';
+import { MatDialogRef } from '@angular/material/dialog';
 import { Store } from '@ngrx/store';
 import { SignonService } from 'e1-service';
 
@@ -10,12 +10,12 @@ import { SignonService } from 'e1-service';
   <form (ngSubmit)="ok()">
     <fieldset [disabled]="busy">
       <mat-dialog-content>
-        <mat-input-container class="full-width">
+        <mat-form-field class="full-width">
           <input matInput placeholder="JDE User ID" name="username" required [(ngModel)]="username">
-        </mat-input-container>
-      <mat-input-container class="full-width">
+        </mat-form-field>
+      <mat-form-field class="full-width">
         <input matInput placeholder="Password" type="password" name="password" required [(ngModel)]="password">
-      </mat-input-container>
+      </mat-form-field>
       <mat-progress-bar *ngIf="busy" mode="indeterminate"></mat-progress-bar>
       <span class="full-width">{{ msg }}</span>
     </mat-dialog-content>
@@ -40,7 +40,7 @@ export class SignonPromptComponent implements OnInit {
       success: () => {
         this.dlg.close();
       },
-      error: msg => { this.msg = 'Sign In Error: Incorrect User Id or Password'; },
+      error: () => { this.msg = 'Sign In Error: Incorrect User Id or Password'; },
       done: () => { this.busy = false; }
     });
   }

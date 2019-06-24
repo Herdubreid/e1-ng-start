@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import { MatDialog } from '@angular/material';
-import { Observable } from 'rxjs/Observable';
+import { MatDialog } from '@angular/material/dialog';
 import { Store } from '@ngrx/store';
 import { SignonService, IServiceCallback } from 'e1-service';
 
